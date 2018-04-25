@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { hot } from 'react-hot-loader'
-import { Hello } from './entry'
+import Hello from './entry'
 
 
 const AppShell = () => (<div>

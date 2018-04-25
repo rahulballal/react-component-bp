@@ -1,3 +1,3 @@
 import Hello from './components/hello'
 
-export Hello
+export default Hello

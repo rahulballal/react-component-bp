@@ -1,3 +1,5 @@
 import React from 'react'
 
-export default Hello = () => <span>Hello Component</span>
+const Hello = () => <span>Hello Component</span>
+
+export default Hello
