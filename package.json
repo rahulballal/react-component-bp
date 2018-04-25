@@ -1,0 +1,41 @@
+{
+  "name": "react-component-bp",
+  "version": "1.0.0",
+  "description": "A boilerplate for writing a npm publishable react component",
+  "main": "dist/main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahulballal/react-component-bp.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "react",
+    "component",
+    "zero-config"
+  ],
+  "author": "Rahul Ballal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahulballal/react-component-bp/issues"
+  },
+  "homepage": "https://github.com/rahulballal/react-component-bp#readme",
+  "devDependencies": {
+    "jest": "^22.4.3",
+    "poi": "^10.1.5",
+    "react-hot-loader": "^4.1.2",
+    "standard": "^11.0.1"
+  },
+  "scripts": {
+    "start": "poi develop src/dev-entrypoint.js",
+    "build:dev": "poi build src/entry.js --format cjs --no-minimize",
+    "build:production": "poi build src/entry.js --format cjs",
+    "test": "jest",
+    "lint:check": "standard",
+    "lint:fix": "standard --fix"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  }
+}
