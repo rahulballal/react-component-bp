@@ -1,13 +1,10 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
+import {shallow} from 'enzyme'
 import Hello from './hello'
 
 describe('Hello Component', () => {
   it('Should load', () => {
-    const component = renderer.create(<Hello />)
-
-    const rendererTree = component.toJSON()
-
-    expect(rendererTree).toBeTruthy()
+    const component = shallow(<Hello />)
+    expect(component).toBeTruthy()
   })
 })
