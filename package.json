@@ -19,6 +19,25 @@
     "url": "https://github.com/rahulballal/react-component-bp/issues"
   },
   "homepage": "https://github.com/rahulballal/react-component-bp#readme",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "poi develop src/dev-entrypoint.js",
+    "build:dev": "poi build src/entry.js --format cjs --no-minimize",
+    "build:production": "poi build src/entry.js --format cjs",
+    "test": "jest",
+    "lint:check": "standard",
+    "lint:fix": "standard --fix",
+    "preci":"yarn install",
+    "ci": "yarn build:production && yarn lint:check && yarn test",
+    "prepack": "yarn ci"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.46",
     "@babel/core": "^7.0.0-beta.46",
@@ -33,19 +52,6 @@
     "react-hot-loader": "^4.1.2",
     "regenerator-runtime": "^0.11.1",
     "standard": "^11.0.1"
-  },
-  "scripts": {
-    "start": "poi develop src/dev-entrypoint.js",
-    "build:dev": "poi build src/entry.js --format cjs --no-minimize",
-    "build:production": "poi build src/entry.js --format cjs",
-    "test": "jest",
-    "lint:check": "standard",
-    "lint:fix": "standard --fix"
-  },
-  "dependencies": {
-    "prop-types": "^15.6.1",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2"
   },
   "standard": {
     "globals": [
