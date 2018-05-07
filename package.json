@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/rahulballal/react-component-bp#readme",
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "scripts": {
     "start": "poi develop src/dev-entrypoint.js",
