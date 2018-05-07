@@ -123,6 +123,6 @@ $RECYCLE.BIN/
 
 # Repository level ignores
 dist/
-
+.idea/
 
 # End of https://www.gitignore.io/api/git,node,macos,windows,visualstudiocode
