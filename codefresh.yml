@@ -1,8 +1,7 @@
 version: '1.0'
 steps:
   continuous_delivery:
-    image: node:9.11.1
+    image: node:9.11.1-alpine
     commands:
       - yarn install
       - yarn ci
-
